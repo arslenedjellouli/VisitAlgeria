@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict
+import json
+from fastapi.responses import JSONResponse
 
 from CSP.CSP import TravelPlanner  # Your itinerary function
 from CSP.CSP import UserPreferences  # Your original class
@@ -48,8 +50,16 @@ def search_tour(preferences: UserPreferencesModel):
     )
 
     # Generate itinerary using the user preferences
-    result = planner.generate_itinerary_json(user_pref)
-    return result
+    file_path = planner.generate_itinerary_json(user_pref)
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            result = json.load(f)
+    except Exception as e:
+        return JSONResponse(content={"error": f"Failed to read itinerary: {str(e)}"}, status_code=500)
+
+    # Return the parsed result
+    return JSONResponse(content=result)
+    
 
 @app.get("/")
 def read_root():
