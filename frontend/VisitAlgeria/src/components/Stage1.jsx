@@ -128,7 +128,8 @@ export default function Stage1({ onLocationSelected }) {
 
   return (
     <div className="map-container">
-      <div className="map-search-bar" ref={searchRef}>
+      <div className="map-search-section">
+        <div className="map-search-bar" ref={searchRef}>
         <input
           type="text"
           placeholder="Search location..."
@@ -165,11 +166,13 @@ export default function Stage1({ onLocationSelected }) {
           </div>
         )}
       </div>
+      </div>
+      
 
       <MapContainer
         center={position || [36.75, 3.06]}
         zoom={position ? 13 : 6}
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "100%", width: "100%", position: "relative", zIndex: 0 }}
         scrollWheelZoom={true}
         zoomControl={false}
       >
@@ -189,12 +192,6 @@ export default function Stage1({ onLocationSelected }) {
       </MapContainer>
 
       <style jsx>{`
-        .map-container {
-          position: relative;
-          height: 100%;
-          width: 100%;
-        }
-
         .map-search-bar {
           position: absolute;
           top: 10px;
