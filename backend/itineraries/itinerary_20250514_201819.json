@@ -1,0 +1,530 @@
+{
+  "itinerary": [
+    {
+      "day": 1,
+      "wilaya": "Bejaia",
+      "total_distance": 16.2,
+      "total_cost": 6184.48,
+      "total_travel_time": "0h21",
+      "schedule": [
+        {
+          "time": "08:30",
+          "location": "Brahmi Hotel",
+          "type": "hotel",
+          "activity": "Depart from hotel",
+          "travel_time": "0h",
+          "distance": 0,
+          "cost": 0,
+          "stay_duration": "0h"
+        },
+        {
+          "time": "08:32",
+          "location": "Mézaia Lake",
+          "type": "attraction",
+          "activity": "Visit Mézaia Lake",
+          "travel_time": "0h02",
+          "distance": 1.9,
+          "cost": 50.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "10:38",
+          "location": "Pic des Singes",
+          "type": "attraction",
+          "activity": "Visit Pic des Singes",
+          "travel_time": "0h06",
+          "distance": 4.6,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "12:42",
+          "location": "La citadelle",
+          "type": "restaurant",
+          "activity": "Lunch",
+          "travel_time": "0h04",
+          "distance": 3.2,
+          "cost": 972.0,
+          "stay_duration": "1h"
+        },
+        {
+          "time": "13:47",
+          "location": "Cap Bouak",
+          "type": "attraction",
+          "activity": "Visit Cap Bouak",
+          "travel_time": "0h04",
+          "distance": 3.1,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "15:47",
+          "location": "Les Aiguades",
+          "type": "attraction",
+          "activity": "Visit Les Aiguades",
+          "travel_time": "0h",
+          "distance": 0.6,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "18:51",
+          "location": "Brahmi Hotel",
+          "type": "hotel",
+          "activity": "Return to hotel",
+          "travel_time": "0h03",
+          "distance": 2.9,
+          "cost": 0,
+          "stay_duration": "0h"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "wilaya": "Bejaia",
+      "total_distance": 15.2,
+      "total_cost": 6123.74,
+      "total_travel_time": "0h20",
+      "schedule": [
+        {
+          "time": "08:30",
+          "location": "Brahmi Hotel",
+          "type": "hotel",
+          "activity": "Depart from hotel",
+          "travel_time": "0h",
+          "distance": 0,
+          "cost": 0,
+          "stay_duration": "0h"
+        },
+        {
+          "time": "08:34",
+          "location": "Tamleht Beach",
+          "type": "attraction",
+          "activity": "Visit Tamleht Beach",
+          "travel_time": "0h04",
+          "distance": 3.0,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "11:34",
+          "location": "Cap Carbon",
+          "type": "attraction",
+          "activity": "Visit Cap Carbon",
+          "travel_time": "0h",
+          "distance": 0.7,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "13:40",
+          "location": "La citadelle",
+          "type": "restaurant",
+          "activity": "Lunch",
+          "travel_time": "0h05",
+          "distance": 3.9,
+          "cost": 972.0,
+          "stay_duration": "1h"
+        },
+        {
+          "time": "14:45",
+          "location": "Plage Perthus",
+          "type": "attraction",
+          "activity": "Visit Plage Perthus",
+          "travel_time": "0h05",
+          "distance": 3.9,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "17:50",
+          "location": "Brahmi Hotel",
+          "type": "hotel",
+          "activity": "Return to hotel",
+          "travel_time": "0h04",
+          "distance": 3.6,
+          "cost": 0,
+          "stay_duration": "0h"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "wilaya": "Boumerdes",
+      "total_distance": 44.6,
+      "total_cost": 7180.27,
+      "total_travel_time": "0h59",
+      "schedule": [
+        {
+          "time": "08:30",
+          "location": "Dar Tlidjene Hotel",
+          "type": "hotel",
+          "activity": "Depart from hotel",
+          "travel_time": "0h",
+          "distance": 0,
+          "cost": 0,
+          "stay_duration": "0h"
+        },
+        {
+          "time": "08:38",
+          "location": "Tamentfoust Beach",
+          "type": "attraction",
+          "activity": "Visit Tamentfoust Beach",
+          "travel_time": "0h08",
+          "distance": 6.4,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "12:05",
+          "location": "Corso Beach",
+          "type": "attraction",
+          "activity": "Visit Corso Beach",
+          "travel_time": "0h27",
+          "distance": 20.4,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "15:07",
+          "location": "La terrasse",
+          "type": "restaurant",
+          "activity": "Lunch",
+          "travel_time": "0h01",
+          "distance": 1.3,
+          "cost": 1134.0,
+          "stay_duration": "1h"
+        },
+        {
+          "time": "16:08",
+          "location": "Boumerdes Beach",
+          "type": "attraction",
+          "activity": "Visit Boumerdes Beach",
+          "travel_time": "0h01",
+          "distance": 0.9,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "19:29",
+          "location": "Dar Tlidjene Hotel",
+          "type": "hotel",
+          "activity": "Return to hotel",
+          "travel_time": "0h20",
+          "distance": 15.6,
+          "cost": 0,
+          "stay_duration": "0h"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "wilaya": "Boumerdes",
+      "total_distance": 85.3,
+      "total_cost": 8452.68,
+      "total_travel_time": "1h53",
+      "schedule": [
+        {
+          "time": "08:30",
+          "location": "Dar Tlidjene Hotel",
+          "type": "hotel",
+          "activity": "Depart from hotel",
+          "travel_time": "0h",
+          "distance": 0,
+          "cost": 0,
+          "stay_duration": "0h"
+        },
+        {
+          "time": "08:59",
+          "location": "Ushuaia Beach Club",
+          "type": "attraction",
+          "activity": "Visit Ushuaia Beach Club",
+          "travel_time": "0h29",
+          "distance": 22.1,
+          "cost": 1000.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "12:03",
+          "location": "Zemmouri Beach",
+          "type": "attraction",
+          "activity": "Visit Zemmouri Beach",
+          "travel_time": "0h03",
+          "distance": 2.8,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "15:15",
+          "location": "Le carré",
+          "type": "restaurant",
+          "activity": "Lunch",
+          "travel_time": "0h12",
+          "distance": 9.6,
+          "cost": 1000.0,
+          "stay_duration": "1h"
+        },
+        {
+          "time": "16:41",
+          "location": "Palestro's Canyon",
+          "type": "attraction",
+          "activity": "Visit Palestro's Canyon",
+          "travel_time": "0h25",
+          "distance": 19.0,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "19:23",
+          "location": "Dar Tlidjene Hotel",
+          "type": "hotel",
+          "activity": "Return to hotel",
+          "travel_time": "0h42",
+          "distance": 31.8,
+          "cost": 0,
+          "stay_duration": "0h"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "wilaya": "Chlef",
+      "total_distance": 157.3,
+      "total_cost": 9072.66,
+      "total_travel_time": "3h29",
+      "schedule": [
+        {
+          "time": "08:30",
+          "location": "Hotel Castellum Chlef",
+          "type": "hotel",
+          "activity": "Depart from hotel",
+          "travel_time": "0h",
+          "distance": 0,
+          "cost": 0,
+          "stay_duration": "0h"
+        },
+        {
+          "time": "09:00",
+          "location": "Barrage Sidi Yaaqoub",
+          "type": "attraction",
+          "activity": "Visit Barrage Sidi Yaaqoub",
+          "travel_time": "0h30",
+          "distance": 23.1,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "11:37",
+          "location": "Barrage Oued Fodda",
+          "type": "attraction",
+          "activity": "Visit Barrage Oued Fodda",
+          "travel_time": "0h36",
+          "distance": 27.4,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "14:14",
+          "location": "La boussole",
+          "type": "restaurant",
+          "activity": "Lunch",
+          "travel_time": "0h36",
+          "distance": 27.7,
+          "cost": 1000.0,
+          "stay_duration": "1h"
+        },
+        {
+          "time": "16:07",
+          "location": "Plage Centrale Tenes",
+          "type": "attraction",
+          "activity": "Visit Plage Centrale Tenes",
+          "travel_time": "0h53",
+          "distance": 39.8,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "19:59",
+          "location": "Hotel Castellum Chlef",
+          "type": "hotel",
+          "activity": "Return to hotel",
+          "travel_time": "0h52",
+          "distance": 39.2,
+          "cost": 0,
+          "stay_duration": "0h"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "wilaya": "Oran",
+      "total_distance": 26.7,
+      "total_cost": 8291.62,
+      "total_travel_time": "0h35",
+      "schedule": [
+        {
+          "time": "08:30",
+          "location": "Hôtel le Cheval Blanc",
+          "type": "hotel",
+          "activity": "Depart from hotel",
+          "travel_time": "0h",
+          "distance": 0,
+          "cost": 0,
+          "stay_duration": "0h"
+        },
+        {
+          "time": "08:31",
+          "location": "Oran sea front",
+          "type": "attraction",
+          "activity": "Visit Oran sea front",
+          "travel_time": "0h01",
+          "distance": 1.0,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "11:40",
+          "location": "CORNICHE of Mers el Kebir",
+          "type": "attraction",
+          "activity": "Visit CORNICHE of Mers el Kebir",
+          "travel_time": "0h08",
+          "distance": 6.7,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "14:48",
+          "location": "Restaurant Le Marin II",
+          "type": "restaurant",
+          "activity": "Lunch",
+          "travel_time": "0h08",
+          "distance": 6.0,
+          "cost": 2025.0,
+          "stay_duration": "1h"
+        },
+        {
+          "time": "15:48",
+          "location": "Saint Germain Beach",
+          "type": "attraction",
+          "activity": "Visit Saint Germain Beach",
+          "travel_time": "0h",
+          "distance": 0.2,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "19:05",
+          "location": "Hôtel le Cheval Blanc",
+          "type": "hotel",
+          "activity": "Return to hotel",
+          "travel_time": "0h16",
+          "distance": 12.7,
+          "cost": 0,
+          "stay_duration": "0h"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "wilaya": "Tipaza",
+      "total_distance": 26.7,
+      "total_cost": 8548.91,
+      "total_travel_time": "0h35",
+      "schedule": [
+        {
+          "time": "08:30",
+          "location": "Hôtel Munatec",
+          "type": "hotel",
+          "activity": "Depart from hotel",
+          "travel_time": "0h",
+          "distance": 0,
+          "cost": 0,
+          "stay_duration": "0h"
+        },
+        {
+          "time": "08:34",
+          "location": "Chenoua plage",
+          "type": "attraction",
+          "activity": "Visit Chenoua plage",
+          "travel_time": "0h04",
+          "distance": 3.4,
+          "cost": 0.0,
+          "stay_duration": "3h"
+        },
+        {
+          "time": "11:36",
+          "location": "Chenoua Corniche",
+          "type": "attraction",
+          "activity": "Visit Chenoua Corniche",
+          "travel_time": "0h02",
+          "distance": 1.7,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "13:44",
+          "location": "Restaurants la Belle Vue",
+          "type": "restaurant",
+          "activity": "Lunch",
+          "travel_time": "0h08",
+          "distance": 6.1,
+          "cost": 1782.0,
+          "stay_duration": "1h"
+        },
+        {
+          "time": "14:56",
+          "location": "Mont Chenoua",
+          "type": "attraction",
+          "activity": "Visit Mont Chenoua",
+          "travel_time": "0h11",
+          "distance": 8.6,
+          "cost": 0.0,
+          "stay_duration": "2h"
+        },
+        {
+          "time": "17:05",
+          "location": "Hôtel Munatec",
+          "type": "hotel",
+          "activity": "Return to hotel",
+          "travel_time": "0h09",
+          "distance": 7.0,
+          "cost": 0,
+          "stay_duration": "0h"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_distance": 372.0,
+    "total_cost": 53854.36,
+    "total_travel_time": "8h15",
+    "total_attractions_visited": 22,
+    "average_cost_per_day": 7693.48,
+    "most_visited_wilaya": "Bejaia",
+    "preferred_attraction_type": "Beaches & Islands",
+    "visited_attractions": {
+      "162": true,
+      "180": true,
+      "163": true,
+      "98": true,
+      "102": true,
+      "179": true,
+      "104": true,
+      "107": true,
+      "109": true,
+      "108": true,
+      "105": true,
+      "106": true,
+      "155": true,
+      "165": true,
+      "166": true,
+      "115": true,
+      "221": true,
+      "233": true,
+      "234": true,
+      "35": true,
+      "48": true,
+      "38": true
+    }
+  }
+}
