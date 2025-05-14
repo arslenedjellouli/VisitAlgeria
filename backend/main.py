@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict
 
-from CSP.CSP import generate_itinerary_json  # Your itinerary function
+from CSP.CSP import TravelPlanner  # Your itinerary function
 from CSP.CSP import UserPreferences  # Your original class
 
 app = FastAPI()
@@ -32,6 +32,8 @@ class UserPreferencesModel(BaseModel):
 @app.post("/search")
 def search_tour(preferences: UserPreferencesModel):
     # Convert Pydantic model to actual userPrefferences object
+
+    planner = TravelPlanner('.\CSP\locations.csv', '.\CSP\wilaya_data.json')
     user_pref = UserPreferences(
         currentLat=preferences.currentLat,
         currentLong=preferences.currentLong,
@@ -43,9 +45,12 @@ def search_tour(preferences: UserPreferencesModel):
         currentWilaya=preferences.currentWilaya
     )
 
-    result = generate_itinerary_json(user_pref)
+    result = planner.generate_itinerary_json(user_pref)
     return {"result": result}
 
 @app.get("/")
 def read_root():
     return {"message": "Tourism API is running"}
+
+if __name__ == "__main__":
+    uvicorn.run(app,host="0.0.0.0",port=8000)
