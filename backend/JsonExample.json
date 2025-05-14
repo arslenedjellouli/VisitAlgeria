@@ -1,0 +1,13 @@
+{
+  "currentLat": 36.75,
+  "currentLong": 3.06,
+  "interests": ["nature", "culture"],
+  "budgetPerDay": 150.0,
+  "minHotelRat": 2,
+  "maxHotelRat": 5,
+  "visitedAttractions": {
+    "Eiffel Tower": true,
+    "Louvre": false
+  },
+  "currentWilaya": "Algiers"
+}

@@ -1,0 +1,2193 @@
+[
+    {
+        "wilaya": "Jijel",
+        "coords": [
+            36.81215196595269,
+            5.751188764938567
+        ],
+        "density": 37.6660524718051,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 5,
+                "Wildlife & Nature Reserves": 2,
+                "Historical & Architectural Sites": 3,
+                "Natural Wonders & Landscapes": 1,
+                "Parks & Recreation Areas": 1,
+                "Shopping & Souks": 1,
+                "Museums & Cultural Centers": 1,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 40.0,
+                "Natural Wonders & Landscapes": 500.0,
+                "Historical & Architectural Sites": 100.0,
+                "Parks & Recreation Areas": 250.0,
+                "Museums & Cultural Centers": 350.0,
+                "Wildlife & Nature Reserves": 375.0,
+                "Shopping & Souks": 0.0,
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 156.66666666666666
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 5,
+            "avg_cost": 6898.2
+        },
+        "restaurants": {
+            "avg_cost": 2000.0,
+            "avg_rating": 4.279999999999999,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Ghardaïa",
+        "coords": [
+            32.496769737480165,
+            3.653212298474362
+        ],
+        "density": 53.58769827792872,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 9,
+                "Oases & Springs": 2,
+                "Parks & Recreation Areas": 2,
+                "Shopping & Souks": 2,
+                "Museums & Cultural Centers": 1,
+                "Historical & Architectural Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Cultural & Heritage Sites": 322.22222222222223,
+                "Museums & Cultural Centers": 400.0,
+                "Oases & Springs": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 194.11764705882354
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 6,
+            "avg_cost": 11016.67
+        },
+        "restaurants": {
+            "avg_cost": 1130.0,
+            "avg_rating": 4.86,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Tipaza",
+        "coords": [
+            36.593063895149164,
+            2.445767515362554
+        ],
+        "density": 21.239595427350427,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 6,
+                "Parks & Recreation Areas": 3,
+                "Museums & Cultural Centers": 2,
+                "Beaches & Islands": 1,
+                "Natural Wonders & Landscapes": 3,
+                "Shopping & Souks": 1,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 325.0,
+                "Beaches & Islands": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 325.0,
+                "Parks & Recreation Areas": 250.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 197.05882352941177
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 6,
+            "avg_cost": 10109.17
+        },
+        "restaurants": {
+            "avg_cost": 1560.0,
+            "avg_rating": 4.18,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Aïn Témouchent",
+        "coords": [
+            35.30775669301973,
+            -1.145250933556318
+        ],
+        "density": 22.428500880952377,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 3,
+                "Museums & Cultural Centers": 1,
+                "Oases & Springs": 1,
+                "Parks & Recreation Areas": 2,
+                "Historical & Architectural Sites": 3,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 116.66666666666667,
+                "Beaches & Islands": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Oases & Springs": 400.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 300.0
+            },
+            "avg_cost": 95.45454545454545
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 6183.6
+        },
+        "restaurants": {
+            "avg_cost": 1800.0,
+            "avg_rating": 4.159999999999999,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "El Bayadh",
+        "coords": [
+            33.68134355804148,
+            1.0188334047660164
+        ],
+        "density": 68.59211006262434,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 4,
+                "Shopping & Souks": 1,
+                "Parks & Recreation Areas": 1,
+                "Historical & Architectural Sites": 2,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 325.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Shopping & Souks": 0.0,
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 72.22222222222223
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 6,
+            "avg_cost": 5416.33
+        },
+        "restaurants": {
+            "avg_cost": 900.0,
+            "avg_rating": 4.159999999999999,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Saïda",
+        "coords": [
+            34.83999008672926,
+            0.14722879076933973
+        ],
+        "density": 7.232820705128206,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 1,
+                "Shopping & Souks": 1,
+                "Natural Wonders & Landscapes": 2,
+                "Parks & Recreation Areas": 1,
+                "Historical & Architectural Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Natural Wonders & Landscapes": 150.0,
+                "Parks & Recreation Areas": 0.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 50.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 1,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 3,
+            "avg_cost": 5326.33
+        },
+        "restaurants": {
+            "avg_cost": 1490.0,
+            "avg_rating": 4.58,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "In Guezzam",
+        "coords": [
+            19.648001737861495,
+            5.477790401908892
+        ],
+        "density": 49.46002836291569,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 4,
+                "Cultural & Heritage Sites": 1,
+                "Shopping & Souks": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Shopping & Souks": 0.0,
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 2,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 4,
+            "avg_cost": 4965.25
+        },
+        "restaurants": {
+            "avg_cost": 720.0,
+            "avg_rating": 4.2,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Ouled Djellal",
+        "coords": [
+            34.43648186403997,
+            5.065397682932841
+        ],
+        "density": 25.198652056419064,
+        "attractions": {
+            "categories": {
+                "Oases & Springs": 1,
+                "Cultural & Heritage Sites": 1,
+                "Historical & Architectural Sites": 1,
+                "Natural Wonders & Landscapes": 2,
+                "Parks & Recreation Areas": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 300.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Oases & Springs": 0.0,
+                "Parks & Recreation Areas": 0.0
+            },
+            "avg_cost": 50.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 1,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 3,
+            "avg_cost": 5166.67
+        },
+        "restaurants": {
+            "avg_cost": 1060.0,
+            "avg_rating": 4.4,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "El Menia",
+        "coords": [
+            30.595736258288994,
+            3.050334033636448
+        ],
+        "density": 6.129846090909091,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 2,
+                "Shopping & Souks": 1,
+                "Historical & Architectural Sites": 1,
+                "Parks & Recreation Areas": 1,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 300.0,
+                "Parks & Recreation Areas": 0.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 50.0
+        },
+        "hotels": {
+            "rating": {
+                "2.0": 1,
+                "3.0": 1,
+                "4.0": 1
+            },
+            "number": 3,
+            "avg_cost": 4833.33
+        },
+        "restaurants": {
+            "avg_cost": 850.0,
+            "avg_rating": 3.78,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Mila",
+        "coords": [
+            36.45570842295189,
+            6.265015962681407
+        ],
+        "density": 32.81968770833334,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 1,
+                "Urban Attractions & Entertainment": 1,
+                "Museums & Cultural Centers": 1,
+                "Parks & Recreation Areas": 1
+            },
+            "avg_cost_by_category": {
+                "Urban Attractions & Entertainment": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 300.0,
+                "Parks & Recreation Areas": 0.0
+            },
+            "avg_cost": 75.0
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 6,
+                "3.0": 1,
+                "2.0": 1
+            },
+            "number": 8,
+            "avg_cost": 8391.12
+        },
+        "restaurants": {
+            "avg_cost": 1450.0,
+            "avg_rating": 4.5,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Bejaia",
+        "coords": [
+            36.75023972334361,
+            5.0522954146850845
+        ],
+        "density": 19.412742274773144,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 8,
+                "Natural Wonders & Landscapes": 10,
+                "Parks & Recreation Areas": 5,
+                "Historical & Architectural Sites": 6,
+                "Urban Attractions & Entertainment": 3,
+                "Museums & Cultural Centers": 1,
+                "Cultural & Heritage Sites": 1,
+                "Wildlife & Nature Reserves": 1,
+                "Shopping & Souks": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 83.33333333333333,
+                "Beaches & Islands": 437.5,
+                "Natural Wonders & Landscapes": 40.0,
+                "Urban Attractions & Entertainment": 166.66666666666666,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 200.0,
+                "Wildlife & Nature Reserves": 0.0,
+                "Parks & Recreation Areas": 40.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 147.22222222222223
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 9,
+                "4.0": 3,
+                "2.0": 2,
+                "5.0": 1
+            },
+            "number": 15,
+            "avg_cost": 8418.73
+        },
+        "restaurants": {
+            "avg_cost": 1820.0,
+            "avg_rating": 4.08,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Boumerdes",
+        "coords": [
+            36.760210337191765,
+            3.4741769927160155
+        ],
+        "density": 23.600955553846156,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 5,
+                "Parks & Recreation Areas": 3,
+                "Historical & Architectural Sites": 3,
+                "Cultural & Heritage Sites": 2,
+                "Natural Wonders & Landscapes": 2
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 200.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Historical & Architectural Sites": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Parks & Recreation Areas": 166.66666666666666
+            },
+            "avg_cost": 100.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "4.0": 2,
+                "5.0": 1,
+                "2.0": 1
+            },
+            "number": 7,
+            "avg_cost": 7267.0
+        },
+        "restaurants": {
+            "avg_cost": 1500.0,
+            "avg_rating": 4.4,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Chlef",
+        "coords": [
+            36.15562070540504,
+            1.3319677657114197
+        ],
+        "density": 53.28679548387097,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 10,
+                "Parks & Recreation Areas": 4,
+                "Natural Wonders & Landscapes": 3,
+                "Cultural & Heritage Sites": 2,
+                "Museums & Cultural Centers": 2,
+                "Historical & Architectural Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 150.0,
+                "Historical & Architectural Sites": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Natural Wonders & Landscapes": 50.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 150.0
+            },
+            "avg_cost": 88.63636363636364
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "4.0": 1,
+                "5.0": 1,
+                "2.0": 1
+            },
+            "number": 6,
+            "avg_cost": 8237.0
+        },
+        "restaurants": {
+            "avg_cost": 1120.0,
+            "avg_rating": 3.88,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "El Tarf",
+        "coords": [
+            36.76937886411346,
+            8.31359599629603
+        ],
+        "density": 34.23376722877567,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 7,
+                "Natural Wonders & Landscapes": 3,
+                "Wildlife & Nature Reserves": 1
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Wildlife & Nature Reserves": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 2,
+                "2.0": 1,
+                "3.0": 1
+            },
+            "number": 4,
+            "avg_cost": 5625.0
+        },
+        "restaurants": {
+            "avg_cost": 1000.0,
+            "avg_rating": 3.9199999999999995,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Mostaganem",
+        "coords": [
+            35.93310718051938,
+            0.09420307345447064
+        ],
+        "density": 16.033368263546798,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 7,
+                "Historical & Architectural Sites": 6,
+                "Beaches & Islands": 2,
+                "Natural Wonders & Landscapes": 1,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 0.0,
+                "Historical & Architectural Sites": 58.333333333333336,
+                "Parks & Recreation Areas": 185.71428571428572,
+                "Natural Wonders & Landscapes": 0.0,
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 97.05882352941177
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "4.0": 3,
+                "2.0": 1
+            },
+            "number": 8,
+            "avg_cost": 9523.88
+        },
+        "restaurants": {
+            "avg_cost": 1240.0,
+            "avg_rating": 3.84,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Touggourt",
+        "coords": [
+            33.115041026558025,
+            6.064792357712808
+        ],
+        "density": 26.638143111111113,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 1,
+                "Natural Wonders & Landscapes": 1,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 1,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 3,
+            "avg_cost": 5123.33
+        },
+        "restaurants": {
+            "avg_cost": 840.0,
+            "avg_rating": 4.1,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Beni Abbes",
+        "coords": [
+            30.18697739443879,
+            -2.0714961356903294
+        ],
+        "density": 207.37506379467806,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 1,
+                "Historical & Architectural Sites": 1,
+                "Oases & Springs": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Historical & Architectural Sites": 150.0,
+                "Oases & Springs": 0.0
+            },
+            "avg_cost": 50.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "4.0": 2,
+                "2.0": 1
+            },
+            "number": 6,
+            "avg_cost": 6368.0
+        },
+        "restaurants": {
+            "avg_cost": 900.0,
+            "avg_rating": 3.25,
+            "number": 2
+        }
+    },
+    {
+        "wilaya": "Tamanrasset",
+        "coords": [
+            22.835182141888424,
+            5.663611744145214
+        ],
+        "density": 135.07522157316865,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 5,
+                "Parks & Recreation Areas": 2,
+                "Oases & Springs": 1,
+                "Wildlife & Nature Reserves": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 500.0,
+                "Oases & Springs": 300.0,
+                "Wildlife & Nature Reserves": 0.0,
+                "Parks & Recreation Areas": 100.0
+            },
+            "avg_cost": 333.3333333333333
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 2,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 4,
+            "avg_cost": 6821.0
+        },
+        "restaurants": {
+            "avg_cost": 950.0,
+            "avg_rating": 3.8499999999999996,
+            "number": 2
+        }
+    },
+    {
+        "wilaya": "Timimoun",
+        "coords": [
+            29.262258172214832,
+            0.4230118016373119
+        ],
+        "density": 200.89998553030304,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 1,
+                "Oases & Springs": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Oases & Springs": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 2,
+                "1.0": 1,
+                "2.0": 1,
+                "3.0": 1
+            },
+            "number": 5,
+            "avg_cost": 6236.4
+        },
+        "restaurants": {
+            "avg_cost": 820.0,
+            "avg_rating": 3.96,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Oran",
+        "coords": [
+            35.6991003939649,
+            -0.6351042116155977
+        ],
+        "density": 13.691500780120695,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 7,
+                "Parks & Recreation Areas": 3,
+                "Historical & Architectural Sites": 3,
+                "Cultural & Heritage Sites": 4,
+                "Wildlife & Nature Reserves": 1,
+                "Museums & Cultural Centers": 1,
+                "Shopping & Souks": 1,
+                "Natural Wonders & Landscapes": 1
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 107.14285714285714,
+                "Cultural & Heritage Sites": 0.0,
+                "Historical & Architectural Sites": 0.0,
+                "Natural Wonders & Landscapes": 200.0,
+                "Museums & Cultural Centers": 350.0,
+                "Wildlife & Nature Reserves": 0.0,
+                "Parks & Recreation Areas": 300.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 104.76190476190476
+        },
+        "hotels": {
+            "rating": {
+                "5.0": 4,
+                "3.0": 4,
+                "4.0": 2,
+                "2.0": 1
+            },
+            "number": 11,
+            "avg_cost": 13681.82
+        },
+        "restaurants": {
+            "avg_cost": 2600.0,
+            "avg_rating": 4.029999999999999,
+            "number": 10
+        }
+    },
+    {
+        "wilaya": "Setif",
+        "coords": [
+            36.1933664260903,
+            5.413644888882941
+        ],
+        "density": 19.550763534482762,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 5,
+                "Historical & Architectural Sites": 6,
+                "Natural Wonders & Landscapes": 2,
+                "Museums & Cultural Centers": 1,
+                "Urban Attractions & Entertainment": 1,
+                "Oases & Springs": 1,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Parks & Recreation Areas": 440.0,
+                "Oases & Springs": 0.0,
+                "Urban Attractions & Entertainment": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Museums & Cultural Centers": 300.0
+            },
+            "avg_cost": 147.05882352941177
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 3,
+                "3.0": 2,
+                "2.0": 1
+            },
+            "number": 6,
+            "avg_cost": 11333.33
+        },
+        "restaurants": {
+            "avg_cost": 1257.142857142857,
+            "avg_rating": 3.9714285714285715,
+            "number": 7
+        }
+    },
+    {
+        "wilaya": "Blida",
+        "coords": [
+            36.476262079083675,
+            2.830744378953598
+        ],
+        "density": 15.526324014778327,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 4,
+                "Parks & Recreation Areas": 2,
+                "Cultural & Heritage Sites": 2,
+                "Natural Wonders & Landscapes": 4,
+                "Wildlife & Nature Reserves": 1,
+                "Urban Attractions & Entertainment": 2,
+                "Oases & Springs": 1,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Oases & Springs": 100.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Urban Attractions & Entertainment": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 100.0,
+                "Wildlife & Nature Reserves": 0.0
+            },
+            "avg_cost": 11.764705882352942
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "4.0": 2,
+                "2.0": 1
+            },
+            "number": 6,
+            "avg_cost": 8666.67
+        },
+        "restaurants": {
+            "avg_cost": 1300.0,
+            "avg_rating": 4.014285714285714,
+            "number": 7
+        }
+    },
+    {
+        "wilaya": "Guelma",
+        "coords": [
+            36.4636694418764,
+            7.436069841855126
+        ],
+        "density": 19.08150239473684,
+        "attractions": {
+            "categories": {
+                "Oases & Springs": 2,
+                "Historical & Architectural Sites": 3,
+                "Natural Wonders & Landscapes": 3,
+                "Museums & Cultural Centers": 1,
+                "Parks & Recreation Areas": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Oases & Springs": 50.0,
+                "Museums & Cultural Centers": 50.0
+            },
+            "avg_cost": 15.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 5,
+            "avg_cost": 6700.0
+        },
+        "restaurants": {
+            "avg_cost": 980.0,
+            "avg_rating": 4.16,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Tiaret",
+        "coords": [
+            35.37368515102551,
+            1.3155134416335095
+        ],
+        "density": 25.109261083333333,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 3,
+                "Historical & Architectural Sites": 3,
+                "Parks & Recreation Areas": 1,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 5620.0
+        },
+        "restaurants": {
+            "avg_cost": 1260.0,
+            "avg_rating": 4.4,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Ouargla",
+        "coords": [
+            31.966754923085016,
+            5.342229768975155
+        ],
+        "density": 159.8792642628962,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 4,
+                "Historical & Architectural Sites": 3,
+                "Parks & Recreation Areas": 1,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Historical & Architectural Sites": 0.0,
+                "Parks & Recreation Areas": 200.0,
+                "Museums & Cultural Centers": 100.0
+            },
+            "avg_cost": 33.333333333333336
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 2,
+                "3.0": 2,
+                "2.0": 1
+            },
+            "number": 5,
+            "avg_cost": 10600.0
+        },
+        "restaurants": {
+            "avg_cost": 700.0,
+            "avg_rating": 4.125,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "Adrar",
+        "coords": [
+            27.88493677361494,
+            -0.2911795372221297
+        ],
+        "density": 38.20711784584981,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 7,
+                "Natural Wonders & Landscapes": 3,
+                "Cultural & Heritage Sites": 1,
+                "Parks & Recreation Areas": 1,
+                "Oases & Springs": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 23.333333333333332,
+                "Historical & Architectural Sites": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Oases & Springs": 50.0
+            },
+            "avg_cost": 9.23076923076923
+        },
+        "hotels": {
+            "rating": {
+                "2.0": 2,
+                "4.0": 2,
+                "3.0": 2
+            },
+            "number": 6,
+            "avg_cost": 8333.33
+        },
+        "restaurants": {
+            "avg_cost": 575.0,
+            "avg_rating": 4.1,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "Relizane",
+        "coords": [
+            35.7470978921183,
+            0.5638878751635532
+        ],
+        "density": 30.905804916666664,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 3,
+                "Natural Wonders & Landscapes": 2,
+                "Parks & Recreation Areas": 2,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 75.0,
+                "Historical & Architectural Sites": 0.0,
+                "Museums & Cultural Centers": 250.0
+            },
+            "avg_cost": 50.0
+        },
+        "hotels": {
+            "rating": {
+                "2.0": 3,
+                "3.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 5100.0
+        },
+        "restaurants": {
+            "avg_cost": 1225.0,
+            "avg_rating": 4.1,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "Aïn Defla",
+        "coords": [
+            36.25562149363733,
+            1.954605218844973
+        ],
+        "density": 38.040767865497074,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 3,
+                "Natural Wonders & Landscapes": 5,
+                "Parks & Recreation Areas": 2,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 50.0,
+                "Historical & Architectural Sites": 33.333333333333336,
+                "Museums & Cultural Centers": 200.0
+            },
+            "avg_cost": 36.36363636363637
+        },
+        "hotels": {
+            "rating": {
+                "2.0": 3,
+                "3.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 5700.0
+        },
+        "restaurants": {
+            "avg_cost": 1325.0,
+            "avg_rating": 4.325,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "El M’Ghair",
+        "coords": [
+            33.94217640055298,
+            5.933898553891131
+        ],
+        "density": 6.881215833333333,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 2,
+                "Natural Wonders & Landscapes": 2,
+                "Shopping & Souks": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 75.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 30.0
+        },
+        "hotels": {
+            "rating": {
+                "2.0": 1,
+                "1.0": 1,
+                "3.0": 1,
+                "4.0": 1
+            },
+            "number": 4,
+            "avg_cost": 3875.0
+        },
+        "restaurants": {
+            "avg_cost": 650.0,
+            "avg_rating": 3.65,
+            "number": 2
+        }
+    },
+    {
+        "wilaya": "Tlemcen",
+        "coords": [
+            34.885186954260995,
+            -1.3244319031631546
+        ],
+        "density": 43.642184277637014,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 3,
+                "Parks & Recreation Areas": 4,
+                "Historical & Architectural Sites": 2,
+                "Natural Wonders & Landscapes": 3,
+                "Wildlife & Nature Reserves": 1,
+                "Shopping & Souks": 1,
+                "Museums & Cultural Centers": 2
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 150.0,
+                "Natural Wonders & Landscapes": 50.0,
+                "Parks & Recreation Areas": 312.5,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 100.0,
+                "Wildlife & Nature Reserves": 0.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 118.75
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 6,
+                "3.0": 1,
+                "2.0": 1
+            },
+            "number": 8,
+            "avg_cost": 8391.88
+        },
+        "restaurants": {
+            "avg_cost": 1416.8333333333333,
+            "avg_rating": 4.166666666666667,
+            "number": 6
+        }
+    },
+    {
+        "wilaya": "Tizi Ouzou",
+        "coords": [
+            36.70742606111922,
+            4.053544559443814
+        ],
+        "density": 67.54786354628963,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 5,
+                "Cultural & Heritage Sites": 4,
+                "Wildlife & Nature Reserves": 1,
+                "Shopping & Souks": 2,
+                "Natural Wonders & Landscapes": 2,
+                "Historical & Architectural Sites": 1,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 100.0,
+                "Parks & Recreation Areas": 150.0,
+                "Cultural & Heritage Sites": 25.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Museums & Cultural Centers": 200.0,
+                "Wildlife & Nature Reserves": 0.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 71.875
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "4.0": 2,
+                "2.0": 1
+            },
+            "number": 7,
+            "avg_cost": 7118.57
+        },
+        "restaurants": {
+            "avg_cost": 1039.1666666666667,
+            "avg_rating": 4.355555555555556,
+            "number": 9
+        }
+    },
+    {
+        "wilaya": "Mascara",
+        "coords": [
+            35.40478765894567,
+            0.13942127077965638
+        ],
+        "density": 11.125778076923078,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 2
+            },
+            "avg_cost_by_category": {
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 6,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 8,
+            "avg_cost": 6727.5
+        },
+        "restaurants": {
+            "avg_cost": 975.0,
+            "avg_rating": 4.500000000000001,
+            "number": 6
+        }
+    },
+    {
+        "wilaya": "Skikda",
+        "coords": [
+            36.860357198403726,
+            6.90637998208141
+        ],
+        "density": 33.85858592592593,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 3,
+                "Museums & Cultural Centers": 1,
+                "Historical & Architectural Sites": 3,
+                "Shopping & Souks": 2,
+                "Parks & Recreation Areas": 2
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 33.333333333333336,
+                "Beaches & Islands": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Museums & Cultural Centers": 200.0,
+                "Shopping & Souks": 0.0
+            },
+            "avg_cost": 27.272727272727273
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 7,
+                "4.0": 4,
+                "5.0": 1,
+                "2.0": 1
+            },
+            "number": 13,
+            "avg_cost": 10300.92
+        },
+        "restaurants": {
+            "avg_cost": 1150.1,
+            "avg_rating": 3.8600000000000003,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Batna",
+        "coords": [
+            35.54557206041087,
+            6.157932125593762
+        ],
+        "density": 23.410645099485322,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 3,
+                "Parks & Recreation Areas": 2,
+                "Natural Wonders & Landscapes": 2,
+                "Cultural & Heritage Sites": 2,
+                "Museums & Cultural Centers": 1,
+                "Wildlife & Nature Reserves": 1,
+                "Urban Attractions & Entertainment": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 166.66666666666666,
+                "Natural Wonders & Landscapes": 0.0,
+                "Urban Attractions & Entertainment": 350.0,
+                "Parks & Recreation Areas": 50.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 200.0,
+                "Wildlife & Nature Reserves": 0.0
+            },
+            "avg_cost": 95.83333333333333
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 5,
+                "3.0": 1,
+                "5.0": 1,
+                "2.0": 1
+            },
+            "number": 8,
+            "avg_cost": 7198.38
+        },
+        "restaurants": {
+            "avg_cost": 857.6428571428571,
+            "avg_rating": 4.328571428571428,
+            "number": 7
+        }
+    },
+    {
+        "wilaya": "Djanet",
+        "coords": [
+            24.66963951294148,
+            9.73706336392692
+        ],
+        "density": 154.22799613839743,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 4,
+                "Cultural & Heritage Sites": 3,
+                "Oases & Springs": 1,
+                "Museums & Cultural Centers": 1,
+                "Shopping & Souks": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 125.0,
+                "Museums & Cultural Centers": 200.0,
+                "Oases & Springs": 0.0,
+                "Shopping & Souks": 0.0,
+                "Cultural & Heritage Sites": 233.33333333333334
+            },
+            "avg_cost": 140.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 5,
+            "avg_cost": 5300.0
+        },
+        "restaurants": {
+            "avg_cost": 650.0,
+            "avg_rating": 3.6666666666666665,
+            "number": 3
+        }
+    },
+    {
+        "wilaya": "Djelfa",
+        "coords": [
+            34.667197630760214,
+            3.247587956987108
+        ],
+        "density": 7.031095756488392,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 8518.4
+        },
+        "restaurants": {
+            "avg_cost": 1237.5,
+            "avg_rating": 4.325,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "Biskra",
+        "coords": [
+            34.8529061384262,
+            5.730082290700982
+        ],
+        "density": 5.5004628095238095,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 1,
+                "Oases & Springs": 2,
+                "Historical & Architectural Sites": 2,
+                "Museums & Cultural Centers": 1,
+                "Parks & Recreation Areas": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Oases & Springs": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 200.0
+            },
+            "avg_cost": 28.571428571428573
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 6,
+            "avg_cost": 7188.0
+        },
+        "restaurants": {
+            "avg_cost": 1450.0,
+            "avg_rating": 4.65,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "El Oued",
+        "coords": [
+            33.36733470854494,
+            6.854244649062649
+        ],
+        "density": 85.04871962039105,
+        "attractions": {
+            "categories": {
+                "Museums & Cultural Centers": 1,
+                "Cultural & Heritage Sites": 1,
+                "Parks & Recreation Areas": 1,
+                "Oases & Springs": 1
+            },
+            "avg_cost_by_category": {
+                "Museums & Cultural Centers": 200.0,
+                "Oases & Springs": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Cultural & Heritage Sites": 0.0
+            },
+            "avg_cost": 50.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 7377.2
+        },
+        "restaurants": {
+            "avg_cost": 1366.6666666666667,
+            "avg_rating": 4.166666666666667,
+            "number": 3
+        }
+    },
+    {
+        "wilaya": "Tindouf",
+        "coords": [
+            27.623589542520193,
+            -7.946858419385634
+        ],
+        "density": 30.109911500000003,
+        "attractions": {
+            "categories": {
+                "Oases & Springs": 1
+            },
+            "avg_cost_by_category": {
+                "Oases & Springs": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 1,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 3,
+            "avg_cost": 5150.0
+        },
+        "restaurants": {
+            "avg_cost": 1433.3333333333333,
+            "avg_rating": 4.433333333333334,
+            "number": 3
+        }
+    },
+    {
+        "wilaya": "Algiers",
+        "coords": [
+            36.740555587013795,
+            3.08370389758528
+        ],
+        "density": 12.374202101449276,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 8,
+                "Museums & Cultural Centers": 3,
+                "Beaches & Islands": 3,
+                "Parks & Recreation Areas": 3,
+                "Cultural & Heritage Sites": 5,
+                "Urban Attractions & Entertainment": 4,
+                "Natural Wonders & Landscapes": 1
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Urban Attractions & Entertainment": 750.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Historical & Architectural Sites": 262.5,
+                "Museums & Cultural Centers": 533.3333333333334,
+                "Parks & Recreation Areas": 933.3333333333334
+            },
+            "avg_cost": 351.85185185185185
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 4,
+                "3.0": 2,
+                "5.0": 2,
+                "2.0": 1,
+                "1.0": 1
+            },
+            "number": 10,
+            "avg_cost": 15207.9
+        },
+        "restaurants": {
+            "avg_cost": 2566.6666666666665,
+            "avg_rating": 4.2555555555555555,
+            "number": 9
+        }
+    },
+    {
+        "wilaya": "Annaba",
+        "coords": [
+            36.89858380433545,
+            7.749099259559338
+        ],
+        "density": 8.392129507389162,
+        "attractions": {
+            "categories": {
+                "Beaches & Islands": 3,
+                "Parks & Recreation Areas": 3,
+                "Historical & Architectural Sites": 3,
+                "Cultural & Heritage Sites": 1,
+                "Natural Wonders & Landscapes": 1,
+                "Urban Attractions & Entertainment": 2
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Beaches & Islands": 366.6666666666667,
+                "Cultural & Heritage Sites": 0.0,
+                "Parks & Recreation Areas": 433.3333333333333,
+                "Urban Attractions & Entertainment": 300.0,
+                "Natural Wonders & Landscapes": 0.0
+            },
+            "avg_cost": 230.76923076923077
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "4.0": 2,
+                "5.0": 1,
+                "2.0": 1
+            },
+            "number": 8,
+            "avg_cost": 12306.25
+        },
+        "restaurants": {
+            "avg_cost": 1837.5,
+            "avg_rating": 4.275,
+            "number": 8
+        }
+    },
+    {
+        "wilaya": "Bechar",
+        "coords": [
+            31.631822116793753,
+            -2.2572301965358528
+        ],
+        "density": 41.396005958461245,
+        "attractions": {
+            "categories": {
+                "Cultural & Heritage Sites": 2,
+                "Natural Wonders & Landscapes": 2,
+                "Historical & Architectural Sites": 1,
+                "Museums & Cultural Centers": 1,
+                "Urban Attractions & Entertainment": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Historical & Architectural Sites": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 300.0,
+                "Urban Attractions & Entertainment": 0.0
+            },
+            "avg_cost": 42.857142857142854
+        },
+        "hotels": {
+            "rating": {
+                "4.0": 3,
+                "3.0": 2,
+                "1.0": 1,
+                "2.0": 1
+            },
+            "number": 7,
+            "avg_cost": 5935.71
+        },
+        "restaurants": {
+            "avg_cost": 1175.0,
+            "avg_rating": 4.4,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "Medea",
+        "coords": [
+            36.263612677884005,
+            2.757942859715654
+        ],
+        "density": 16.614416877470358,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 5,
+                "Parks & Recreation Areas": 2,
+                "Urban Attractions & Entertainment": 2,
+                "Cultural & Heritage Sites": 1,
+                "Natural Wonders & Landscapes": 1,
+                "Wildlife & Nature Reserves": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 100.0,
+                "Parks & Recreation Areas": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Wildlife & Nature Reserves": 300.0,
+                "Urban Attractions & Entertainment": 250.0
+            },
+            "avg_cost": 108.33333333333333
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 6,
+            "avg_cost": 6066.67
+        },
+        "restaurants": {
+            "avg_cost": 1550.0,
+            "avg_rating": 4.416666666666667,
+            "number": 6
+        }
+    },
+    {
+        "wilaya": "illizi",
+        "coords": [
+            26.512612192188683,
+            8.611673250384065
+        ],
+        "density": 119.64681104508472,
+        "attractions": {
+            "categories": {
+                "Natural Wonders & Landscapes": 6,
+                "Parks & Recreation Areas": 2,
+                "Cultural & Heritage Sites": 1,
+                "Historical & Architectural Sites": 2
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 0.0,
+                "Cultural & Heritage Sites": 400.0
+            },
+            "avg_cost": 36.36363636363637
+        },
+        "hotels": {
+            "rating": {
+                "2.0": 2,
+                "3.0": 1,
+                "4.0": 1
+            },
+            "number": 4,
+            "avg_cost": 4750.0
+        },
+        "restaurants": {
+            "avg_cost": 1066.6666666666667,
+            "avg_rating": 4.433333333333334,
+            "number": 3
+        }
+    },
+    {
+        "wilaya": "sidi bel Abes",
+        "coords": [
+            35.21154787340106,
+            -0.6410061670524067
+        ],
+        "density": 9.418110108695654,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 4,
+                "Cultural & Heritage Sites": 3,
+                "Urban Attractions & Entertainment": 3,
+                "Parks & Recreation Areas": 2,
+                "Natural Wonders & Landscapes": 2
+            },
+            "avg_cost_by_category": {
+                "Cultural & Heritage Sites": 0.0,
+                "Historical & Architectural Sites": 492.5,
+                "Natural Wonders & Landscapes": 0.0,
+                "Urban Attractions & Entertainment": 366.6666666666667,
+                "Parks & Recreation Areas": 1050.0
+            },
+            "avg_cost": 369.2857142857143
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 2,
+                "4.0": 2,
+                "2.0": 1
+            },
+            "number": 5,
+            "avg_cost": 5860.0
+        },
+        "restaurants": {
+            "avg_cost": 1466.6666666666667,
+            "avg_rating": 4.266666666666667,
+            "number": 6
+        }
+    },
+    {
+        "wilaya": "Bordj Bou Arréridj",
+        "coords": [
+            36.08129282774329,
+            4.761570807991115
+        ],
+        "density": 7.335983566666667,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 5,
+                "Historical & Architectural Sites": 2,
+                "Cultural & Heritage Sites": 2,
+                "Urban Attractions & Entertainment": 2,
+                "Beaches & Islands": 1
+            },
+            "avg_cost_by_category": {
+                "Beaches & Islands": 2500.0,
+                "Historical & Architectural Sites": 100.0,
+                "Parks & Recreation Areas": 500.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Urban Attractions & Entertainment": 750.0
+            },
+            "avg_cost": 558.3333333333334
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "2.0": 3,
+                "4.0": 1
+            },
+            "number": 8,
+            "avg_cost": 6873.88
+        },
+        "restaurants": {
+            "avg_cost": 1341.6666666666667,
+            "avg_rating": 4.3,
+            "number": 6
+        }
+    },
+    {
+        "wilaya": "M'Sila",
+        "coords": [
+            35.71936448362532,
+            4.524557561379716
+        ],
+        "density": 13.742702190476193,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 3,
+                "Cultural & Heritage Sites": 3,
+                "Historical & Architectural Sites": 2,
+                "Urban Attractions & Entertainment": 3,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 350.0,
+                "Urban Attractions & Entertainment": 0.0,
+                "Cultural & Heritage Sites": 100.0,
+                "Museums & Cultural Centers": 600.0,
+                "Parks & Recreation Areas": 1500.0
+            },
+            "avg_cost": 508.3333333333333
+        },
+        "hotels": {
+            "rating": {
+                "2.0": 4,
+                "3.0": 1,
+                "4.0": 1
+            },
+            "number": 6,
+            "avg_cost": 4250.0
+        },
+        "restaurants": {
+            "avg_cost": 1820.0,
+            "avg_rating": 4.32,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Ain Salah",
+        "coords": [
+            27.20343712598601,
+            2.49636325486241
+        ],
+        "density": 40.050088402357694,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 2,
+                "Cultural & Heritage Sites": 2,
+                "Parks & Recreation Areas": 3,
+                "Urban Attractions & Entertainment": 3,
+                "Natural Wonders & Landscapes": 1,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Historical & Architectural Sites": 50.0,
+                "Parks & Recreation Areas": 266.6666666666667,
+                "Urban Attractions & Entertainment": 100.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 800.0
+            },
+            "avg_cost": 166.66666666666666
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 5300.0
+        },
+        "restaurants": {
+            "avg_cost": 683.3333333333334,
+            "avg_rating": 3.733333333333333,
+            "number": 3
+        }
+    },
+    {
+        "wilaya": "Constantine",
+        "coords": [
+            36.36160302396055,
+            6.627535399354412
+        ],
+        "density": 45.06894225569892,
+        "attractions": {
+            "categories": {
+                "Urban Attractions & Entertainment": 9,
+                "Parks & Recreation Areas": 9,
+                "Natural Wonders & Landscapes": 4,
+                "Historical & Architectural Sites": 3,
+                "Cultural & Heritage Sites": 2,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Urban Attractions & Entertainment": 388.8888888888889,
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 444.44444444444446,
+                "Cultural & Heritage Sites": 0.0,
+                "Museums & Cultural Centers": 0.0
+            },
+            "avg_cost": 267.85714285714283
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 11,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 13,
+            "avg_cost": 11569.0
+        },
+        "restaurants": {
+            "avg_cost": 1550.0,
+            "avg_rating": 3.142857142857143,
+            "number": 14
+        }
+    },
+    {
+        "wilaya": "Tebessa",
+        "coords": [
+            35.40296901257169,
+            8.114834367826372
+        ],
+        "density": 61.277573903607056,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 2,
+                "Museums & Cultural Centers": 1,
+                "Urban Attractions & Entertainment": 1,
+                "Cultural & Heritage Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0,
+                "Cultural & Heritage Sites": 0.0,
+                "Urban Attractions & Entertainment": 0.0,
+                "Museums & Cultural Centers": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 6,
+            "avg_cost": 6158.33
+        },
+        "restaurants": {
+            "avg_cost": 1700.0,
+            "avg_rating": 3.0,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Bouira",
+        "coords": [
+            36.37349687966703,
+            3.8980420943889347
+        ],
+        "density": 20.50530017419317,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 6,
+                "Natural Wonders & Landscapes": 4,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 583.3333333333334,
+                "Museums & Cultural Centers": 200.0
+            },
+            "avg_cost": 308.3333333333333
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 5,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 7,
+            "avg_cost": 7742.86
+        },
+        "restaurants": {
+            "avg_cost": 1500.0,
+            "avg_rating": 3.0,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Khenchla",
+        "coords": [
+            35.42760088497192,
+            7.145313484114721
+        ],
+        "density": 80.04592189351662,
+        "attractions": {
+            "categories": {
+                "Urban Attractions & Entertainment": 2,
+                "Parks & Recreation Areas": 3,
+                "Museums & Cultural Centers": 1
+            },
+            "avg_cost_by_category": {
+                "Parks & Recreation Areas": 333.3333333333333,
+                "Urban Attractions & Entertainment": 0.0,
+                "Museums & Cultural Centers": 0.0
+            },
+            "avg_cost": 166.66666666666666
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 2,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 4,
+            "avg_cost": 7125.0
+        },
+        "restaurants": {
+            "avg_cost": 1140.0,
+            "avg_rating": 3.0,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Souk Ahras",
+        "coords": [
+            36.28098718735723,
+            7.938322068943782
+        ],
+        "density": 31.313611175851058,
+        "attractions": {
+            "categories": {
+                "Museums & Cultural Centers": 2,
+                "Parks & Recreation Areas": 2,
+                "Natural Wonders & Landscapes": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 250.0,
+                "Museums & Cultural Centers": 350.0
+            },
+            "avg_cost": 240.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 5,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 7,
+            "avg_cost": 6571.43
+        },
+        "restaurants": {
+            "avg_cost": 1000.0,
+            "avg_rating": 3.0,
+            "number": 4
+        }
+    },
+    {
+        "wilaya": "Oum El Bouaghi",
+        "coords": [
+            35.869700130553014,
+            7.107323380792158
+        ],
+        "density": 84.76842273919257,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 4
+            },
+            "avg_cost_by_category": {
+                "Parks & Recreation Areas": 625.0
+            },
+            "avg_cost": 500.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 6,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 8,
+            "avg_cost": 8837.5
+        },
+        "restaurants": {
+            "avg_cost": 1055.5555555555557,
+            "avg_rating": 3.0,
+            "number": 9
+        }
+    },
+    {
+        "wilaya": "Laghouat",
+        "coords": [
+            33.81223962309326,
+            2.873443019440779
+        ],
+        "density": 162.97883276286302,
+        "attractions": {
+            "categories": {
+                "Museums & Cultural Centers": 3,
+                "Parks & Recreation Areas": 1
+            },
+            "avg_cost_by_category": {
+                "Parks & Recreation Areas": 0.0,
+                "Museums & Cultural Centers": 200.0
+            },
+            "avg_cost": 150.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 4,
+                "4.0": 1,
+                "2.0": 1
+            },
+            "number": 6,
+            "avg_cost": 5841.17
+        },
+        "restaurants": {
+            "avg_cost": 920.0,
+            "avg_rating": 3.8,
+            "number": 5
+        }
+    },
+    {
+        "wilaya": "Tissemsilt",
+        "coords": [
+            35.60617888883687,
+            1.815149641455107
+        ],
+        "density": 104.14988218108634,
+        "attractions": {
+            "categories": {
+                "Parks & Recreation Areas": 2,
+                "Natural Wonders & Landscapes": 1
+            },
+            "avg_cost_by_category": {
+                "Natural Wonders & Landscapes": 0.0,
+                "Parks & Recreation Areas": 500.0
+            },
+            "avg_cost": 333.3333333333333
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 2,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 4,
+            "avg_cost": 5452.25
+        },
+        "restaurants": {
+            "avg_cost": 1000.0,
+            "avg_rating": 3.6666666666666665,
+            "number": 3
+        }
+    },
+    {
+        "wilaya": "Naama",
+        "coords": [
+            33.27472551352864,
+            -0.3061413314338265
+        ],
+        "density": 57.65250783374936,
+        "attractions": {
+            "categories": {
+                "Historical & Architectural Sites": 1
+            },
+            "avg_cost_by_category": {
+                "Historical & Architectural Sites": 0.0
+            },
+            "avg_cost": 0.0
+        },
+        "hotels": {
+            "rating": {
+                "3.0": 3,
+                "2.0": 1,
+                "4.0": 1
+            },
+            "number": 5,
+            "avg_cost": 6260.0
+        },
+        "restaurants": {
+            "avg_cost": 450.0,
+            "avg_rating": 4.0,
+            "number": 1
+        }
+    }
+]
