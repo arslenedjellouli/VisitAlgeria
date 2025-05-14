@@ -31,9 +31,11 @@ class UserPreferencesModel(BaseModel):
 
 @app.post("/search")
 def search_tour(preferences: UserPreferencesModel):
-    # Convert Pydantic model to actual userPrefferences object
+    # Convert Pydantic model (preferences) to actual UserPreferences object
 
     planner = TravelPlanner('.\CSP\locations.csv', '.\CSP\wilaya_data.json')
+
+    # Convert the incoming preferences data to UserPreferences object
     user_pref = UserPreferences(
         currentLat=preferences.currentLat,
         currentLong=preferences.currentLong,
@@ -45,12 +47,13 @@ def search_tour(preferences: UserPreferencesModel):
         currentWilaya=preferences.currentWilaya
     )
 
+    # Generate itinerary using the user preferences
     result = planner.generate_itinerary_json(user_pref)
-    return {"result": result}
+    return result
 
 @app.get("/")
 def read_root():
     return {"message": "Tourism API is running"}
 
 if __name__ == "__main__":
-    uvicorn.run(app,host="0.0.0.0",port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
