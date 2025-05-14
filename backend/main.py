@@ -2,42 +2,48 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List , Dict, Any
+from typing import List, Dict
 
-from .CSP import run_search  # Replace with your actual function
+from CSP.CSP import generate_itinerary_json  # Your itinerary function
+from CSP.CSP import UserPreferences  # Your original class
 
 app = FastAPI()
 
-# Allow CORS (adjust origin for production)
+# Allow CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Set your frontend domain here in production
+    allow_origins=["*"],  # Replace with frontend domain in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Input model from frontend
-class SearchRequest(BaseModel):
-    attractions: List[str]
-    hotels: List[str]
-    restaurants: List[str]
-    budget: float
-    preferences: Dict[str, Any]  # Can hold anything like {'nature': True, 'culture': False}
+# Pydantic model for request parsing
+class UserPreferencesModel(BaseModel):
+    currentLat: float
+    currentLong: float
+    interests: List[str]
+    budgetPerDay: float
+    minHotelRat: float = 0
+    maxHotelRat: float = 5
+    visitedAttractions: Dict[str, bool] = {}
+    currentWilaya: str = ""
 
 @app.post("/search")
-def search_tour(request: SearchRequest):
-    input_data = request.dict()
-
-    # Call your CSP logic with preferences
-    result = run_search(
-        attractions=input_data["attractions"],
-        hotels=input_data["hotels"],
-        restaurants=input_data["restaurants"],
-        budget=input_data["budget"],
-        preferences=input_data["preferences"]
+def search_tour(preferences: UserPreferencesModel):
+    # Convert Pydantic model to actual userPrefferences object
+    user_pref = UserPreferences(
+        currentLat=preferences.currentLat,
+        currentLong=preferences.currentLong,
+        interests=preferences.interests,
+        budgetPerDay=preferences.budgetPerDay,
+        minHotelRat=preferences.minHotelRat,
+        maxHotelRat=preferences.maxHotelRat,
+        visitedAttractions=preferences.visitedAttractions,
+        currentWilaya=preferences.currentWilaya
     )
 
+    result = generate_itinerary_json(user_pref)
     return {"result": result}
 
 @app.get("/")
