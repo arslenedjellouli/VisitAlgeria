@@ -22,22 +22,24 @@ export default function PreferenceFlow() {
     <article className="preference-wrapper">
       <div className="preference-container">
         <div className="stage-bar">
-          <div className={`stage-1 ${stage === 1 ? "active" : ""}`}>
-            Current Location
+          <div className="stages">
+            <div className={`stage-1 ${stage === 1 ? "active" : ""}`}>
+              Current Location
+            </div>
+            <div className={`stage-2 ${stage === 2 ? "active" : ""}`}>
+              Interests
+            </div>
+            <div className={`stage-3 ${stage === 3 ? "active" : ""}`}>
+              Hotel standards
+            </div>
+            <div className={`stage-4 ${stage === 4 ? "active" : ""}`}>
+              Visited attractions
+            </div>
+            <div
+              className="indicator"
+              style={{ left: `calc(5% + ${(stage - 1) * 25}%)` }}
+            />
           </div>
-          <div className={`stage-2 ${stage === 2 ? "active" : ""}`}>
-            Interests
-          </div>
-          <div className={`stage-3 ${stage === 3 ? "active" : ""}`}>
-            Hotel standards
-          </div>
-          <div className={`stage-4 ${stage === 4 ? "active" : ""}`}>
-            Visited attractions
-          </div>
-          <div
-            className="indicator"
-            style={{ left: `calc(${(stage - 1) * 25}% + 5%)` }}
-          />
         </div>
 
         {/* SLIDING CONTENT */}
