@@ -18,6 +18,14 @@ export default function PreferenceFlow() {
     }
   };
 
+  const [selectedLocation, setSelectedLocation] = useState(null);
+
+  const handleLocationSelected = (coords) => {
+    console.log("Received location:", coords);
+    setSelectedLocation(coords);
+    // You can do more with the coordinates here
+  };
+
   return (
     <article className="preference-wrapper">
       <div className="preference-container">
@@ -46,10 +54,10 @@ export default function PreferenceFlow() {
         <div className="stage-content-wrapper">
           <div
             className="stage-slider"
-            style={{ transform: `translateX(-${(stage - 1) * 100}%)` }}
+            style={{ transform: `translateX(-${(stage - 1) * 50}%)` }}
           >
             <div className="stage-slide">
-              <Stage1 />
+              <Stage1 onLocationSelected={handleLocationSelected} />
             </div>
             <div className="stage-slide">
               <Stage2 />

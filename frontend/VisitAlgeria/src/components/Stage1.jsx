@@ -9,6 +9,8 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import Icon from "../assets/icnSearch.svg";
+import Compas from "../assets/COMPAS.svg";
 
 // Fix for missing marker icons
 delete L.Icon.Default.prototype._getIconUrl;
@@ -56,22 +58,46 @@ export default function Stage1({ onLocationSelected }) {
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
   const searchTimeoutRef = useRef(null);
+  const mapRef = useRef(null);
   const searchRef = useRef(null);
 
-  // Request GPS access immediately
-  useEffect(() => {
+  // Initialize map ref
+  const MapWrapper = () => {
+    mapRef.current = useMap();
+    return null;
+  };
+
+  // Get current location with better accuracy
+  const getCurrentLocation = () => {
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         const coords = [pos.coords.latitude, pos.coords.longitude];
         setPosition(coords);
         onLocationSelected(coords);
+        if (mapRef.current) {
+          mapRef.current.flyTo(coords, 15, {
+            duration: 1,
+          });
+        }
       },
       (err) => {
-        console.warn("GPS denied or unavailable");
+        console.warn("GPS error:", err);
+        alert(
+          "Could not get your location. Please ensure location services are enabled."
+        );
       },
-      { enableHighAccuracy: true }
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0,
+      }
     );
-  }, [onLocationSelected]);
+  };
+
+  // Request GPS access immediately on load
+  useEffect(() => {
+    getCurrentLocation();
+  }, []);
 
   const LocationSelector = () => {
     const map = useMap();
@@ -81,19 +107,19 @@ export default function Stage1({ onLocationSelected }) {
         const coords = [e.latlng.lat, e.latlng.lng];
         setPosition(coords);
         onLocationSelected(coords);
-        // Use flyTo directly here for immediate response
         map.flyTo(coords, map.getZoom(), {
-          duration: 1,
+          duration: 0.5,
         });
       },
     });
     return null;
   };
 
+  // Enhanced search with more place types
   const handleSearchChange = async (query) => {
     setSearchInput(query);
 
-    if (query.length < 3) {
+    if (query.length < 1) {
       setSearchResults([]);
       setShowResults(false);
       return;
@@ -106,7 +132,7 @@ export default function Stage1({ onLocationSelected }) {
         const res = await fetch(
           `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
             query
-          )}&addressdetails=1&limit=5&countrycodes=dz`
+          )}&addressdetails=1&limit=10&countrycodes=dz&featureType=settlement,street,city,tourism,amenity`
         );
         const data = await res.json();
         setSearchResults(data || []);
@@ -115,7 +141,7 @@ export default function Stage1({ onLocationSelected }) {
         console.error("Search error:", error);
         setSearchResults([]);
       }
-    }, 500);
+    }, 300);
   };
 
   const handleSelectResult = (result) => {
@@ -124,55 +150,77 @@ export default function Stage1({ onLocationSelected }) {
     onLocationSelected(coords);
     setSearchInput(result.display_name);
     setShowResults(false);
+    if (mapRef.current) {
+      mapRef.current.flyTo(coords, 15, {
+        duration: 1,
+      });
+    }
   };
 
   return (
     <div className="map-container">
       <div className="map-search-section">
         <div className="map-search-bar" ref={searchRef}>
-        <input
-          type="text"
-          placeholder="Search location..."
-          value={searchInput}
-          onChange={(e) => handleSearchChange(e.target.value)}
-          onFocus={() => searchInput.length >= 3 && setShowResults(true)}
-        />
-        {showResults && searchResults.length > 0 && (
-          <div className="search-results">
-            {searchResults.map((result, index) => (
-              <div
-                key={index}
-                className="search-result-item"
-                onClick={() => handleSelectResult(result)}
-              >
-                <div className="result-name">{result.display_name}</div>
-                {result.address && (
-                  <div className="result-details">
-                    {[
-                      result.address.road,
-                      result.address.neighbourhood,
-                      result.address.suburb,
-                      result.address.city ||
-                        result.address.town ||
-                        result.address.village,
-                      result.address.country,
-                    ]
-                      .filter(Boolean)
-                      .join(", ")}
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className="search-icon">
+            <img src={Icon} alt="" />
           </div>
-        )}
+          <input
+            type="text"
+            placeholder="Search location..."
+            value={searchInput}
+            onChange={(e) => handleSearchChange(e.target.value)}
+            onFocus={() => searchInput.length >= 1 && setShowResults(true)}
+          />
+        </div>
+        <div className="search-result-container">
+          {showResults && searchResults.length > 0 && (
+            <div className="search-results">
+              {searchResults.map((result, index) => (
+                <div
+                  key={index}
+                  className="search-result-item"
+                  onClick={() => handleSelectResult(result)}
+                >
+                  <div className="result-name">{result.display_name}</div>
+                  {result.address && (
+                    <div className="result-details">
+                      {[
+                        result.address.road,
+                        result.address.neighbourhood,
+                        result.address.suburb,
+                        result.address.city ||
+                          result.address.town ||
+                          result.address.village,
+                        result.address.country,
+                      ]
+                        .filter(Boolean)
+                        .join(", ")}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
+
+      <div
+        className="map-current-location-button"
+        onClick={getCurrentLocation}
+        title="Find my location"
+      >
+        <img src={Compas} alt="" />
       </div>
-      
 
       <MapContainer
         center={position || [36.75, 3.06]}
         zoom={position ? 13 : 6}
-        style={{ height: "100%", width: "100%", position: "relative", zIndex: 0 }}
+        style={{
+          height: "100%",
+          width: "100%",
+          position: "relative",
+          zIndex: 0,
+        }}
         scrollWheelZoom={true}
         zoomControl={false}
       >
@@ -190,65 +238,6 @@ export default function Stage1({ onLocationSelected }) {
           </>
         )}
       </MapContainer>
-
-      <style jsx>{`
-        .map-search-bar {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          z-index: 1000;
-          width: calc(100% - 40px);
-          max-width: 400px;
-        }
-
-        .map-search-bar input {
-          width: 100%;
-          padding: 10px 15px;
-          border-radius: 20px;
-          border: 1px solid #ccc;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          font-size: 16px;
-        }
-
-        .search-results {
-          background: white;
-          border-radius: 0 0 10px 10px;
-          margin-top: 5px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          max-height: 300px;
-          overflow-y: auto;
-          border: 1px solid #ddd;
-          border-top: none;
-        }
-
-        .search-result-item {
-          padding: 12px 15px;
-          border-bottom: 1px solid #eee;
-          cursor: pointer;
-          transition: background 0.2s;
-        }
-
-        .search-result-item:last-child {
-          border-bottom: none;
-        }
-
-        .search-result-item:hover {
-          background-color: #f5f5f5;
-        }
-
-        .result-name {
-          font-weight: 500;
-          margin-bottom: 3px;
-        }
-
-        .result-details {
-          font-size: 0.85em;
-          color: #666;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-      `}</style>
     </div>
   );
 }
