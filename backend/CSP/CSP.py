@@ -42,7 +42,7 @@ COST_PER_KM = 10
 
 class Location:
     def __init__(self, id, name, loc_type, wilaya, lat, long, category=None, cost=0, rating=0,
-                 description="", closing_days=None, opening_hours=None, closing_hours=None):
+                 description="", closing_days=None, opening_hours=None, closing_hours=None,phone_number=None,website=None,img_url=None):
         self.id = id
         self.name = name
         self.loc_type = loc_type
@@ -56,6 +56,9 @@ class Location:
         self.closing_days = closing_days
         self.opening_hours = opening_hours
         self.closing_hours = closing_hours
+        self.phone_number = phone_number
+        self.website = website
+        self.img_url = img_url
 
     def __str__(self):
         return f"{self.name} ({self.wilaya}) - {self.loc_type}"
@@ -114,7 +117,7 @@ class TravelPlanner:
                     row['id'], row['name'], row['loc_type'], row['wilaya'],
                     row['latitude'], row['longitude'], row.get('category'),
                     row.get('cost'), row.get('rating'), row.get('description'),
-                    row.get('closing_days'), row.get('opening_hours'), row.get('closing_hours')
+                    row.get('closing_days'), row.get('opening_hours'), row.get('closing_hours'),row.get('phone_number'),row.get('website'),row.get('img_url')
                 )
                 locations.append(loc)
         return locations
@@ -253,7 +256,22 @@ class TravelPlanner:
                 'travel_time': 0,
                 'distance': 0,
                 'cost': 0,
-                'stay_duration': 0
+                'stay_duration': 0,
+
+                'wilaya': hotel.wilaya,
+                'loc_type': hotel.loc_type,
+                'latitude': hotel.lat,
+                'longitude': hotel.long,
+                'category': hotel.category,
+                'rating' : hotel.rating,
+                'description': hotel.description,
+                'phone_number': hotel.phone_number,
+                'img_url': hotel.img_url,
+                'website': hotel.website,
+                'description' : None,
+                'closing_days': None,
+                'opening_hours': None,
+                'closing_hours': None
             })
 
             attractions = self.filter_by_preferences(wilaya_locs['attraction'], user_prefs, 'attraction')
@@ -293,7 +311,21 @@ class TravelPlanner:
                     'travel_time': travel_time * 60,
                     'distance': distance,
                     'cost': attraction.cost,
-                    'stay_duration': stay_duration * 60
+                    'stay_duration': stay_duration * 60,
+
+                    'wilaya' : attraction.wilaya,
+                    'loc_type': attraction.loc_type,
+                    'latitude': attraction.lat,
+                    'longitude': attraction.long,
+                    'category': attraction.category,
+                    'rating' : attraction.rating,
+                    'description': attraction.description,
+                    'closing_days': attraction.closing_days,
+                    'opening_hours': attraction.opening_hours,
+                    'closing_hours': attraction.closing_hours,
+                    'phone_number': attraction.phone_number,
+                    'img_url': attraction.img_url,
+                    'website': attraction.website
                 })
 
                 current_time += timedelta(hours=stay_duration)
@@ -326,7 +358,22 @@ class TravelPlanner:
                     'travel_time': travel_time * 60,
                     'distance': distance,
                     'cost': 0,
-                    'stay_duration': 0
+                    'stay_duration': 0,
+
+                    'wilaya': hotel.wilaya,
+                    'loc_type': hotel.loc_type,
+                    'latitude': hotel.lat,
+                    'longitude': hotel.long,
+                    'category': hotel.category,
+                    'rating' : hotel.rating,
+                    'description': hotel.description,
+                    'phone_number': hotel.phone_number,
+                    'img_url': hotel.img_url,
+                    'website': hotel.website,
+                    'closing_days': None,
+                    'opening_hours': None,
+                    'closing_hours': None,
+                    'website' : None
                 })
 
                 day_plan['distances'].append(distance)
@@ -379,7 +426,23 @@ class TravelPlanner:
                             'travel_time': travel_time * 60,
                             'distance': distance,
                             'cost': restaurant.cost,
-                            'stay_duration': RESTAURANT_STAY * 60
+                            'stay_duration': RESTAURANT_STAY * 60,
+
+                            'wilaya' : restaurant.wilaya,
+                            'loc_type': restaurant.loc_type,
+                            'latitude': restaurant.lat,
+                            'longitude': restaurant.long,
+                            'category': restaurant.category,
+                            'rating' : restaurant.rating,
+                            'closing_days': restaurant.closing_days,
+                            'opening_hours': restaurant.opening_hours,
+                            'closing_hours': restaurant.closing_hours,
+                            'phone_number': restaurant.phone_number,
+                            'img_url': restaurant.img_url,
+                            'email' : None,
+                            'description' : None,
+                            'website' : None
+                
                         })
 
                         current_time += timedelta(hours=RESTAURANT_STAY)
@@ -447,7 +510,21 @@ class TravelPlanner:
                                         'travel_time': travel_time * 60,
                                         'distance': distance,
                                         'cost': attraction.cost,
-                                        'stay_duration': stay_duration * 60
+                                        'stay_duration': stay_duration * 60,
+                                        'wilaya' : attraction.wilaya,
+                                        'loc_type': attraction.loc_type,
+                                        'latitude': attraction.lat,
+                                        'longitude': attraction.long,
+                                        'category': attraction.category,
+                                        'rating' : attraction.rating,
+                                        'description': attraction.description,
+                                        'closing_days': attraction.closing_days,
+                                        'opening_hours': attraction.opening_hours,
+                                        'closing_hours': attraction.closing_hours,
+                                        'phone_number': attraction.phone_number,
+                                        'img_url': attraction.img_url,
+                                        'website': attraction.website,
+                                        
                                     })
 
                                     current_time += timedelta(hours=stay_duration)
@@ -482,7 +559,21 @@ class TravelPlanner:
                     'travel_time': travel_time * 60,
                     'distance': distance,
                     'cost': 0,
-                    'stay_duration': 0
+                    'stay_duration': 0,
+
+                    'wilaya': hotel.wilaya,
+                    'loc_type': hotel.loc_type,
+                    'latitude': hotel.lat,
+                    'longitude': hotel.long,
+                    'category': hotel.category,
+                    'rating' : hotel.rating,
+                    'description': hotel.description,
+                    'phone_number': hotel.phone_number,
+                    'img_url': hotel.img_url,
+                    'website': hotel.website,
+                    'closing_days': None,
+                    'opening_hours': None,
+                    'closing_hours': None
                 })
 
                 day_plan['distances'].append(distance)
@@ -588,7 +679,21 @@ class TravelPlanner:
                     "travel_time": self.format_duration(event["travel_time"] / 60),
                     "distance": round(event["distance"], 1),
                     "cost": event["cost"],
-                    "stay_duration": self.format_duration(event["stay_duration"] / 60)
+                    "stay_duration": self.format_duration(event["stay_duration"] / 60),
+
+                    'wilaya' : event["wilaya"],
+                    'loc_type': event["loc_type"],
+                    'latitude': event["latitude"],
+                    'longitude': event["longitude"],
+                    'category': event["category"],
+                    'rating' : event["rating"],
+                    'description': event["description"],
+                    'closing_days': event["closing_days"],
+                    'opening_hours': event["opening_hours"],
+                    'closing_hours': event["closing_hours"],
+                    'phone_number': event["phone_number"],
+                    'img_url': event["img_url"],
+                    'website': event["website"]
                 }
                 day_data["schedule"].append(event_data)
 
