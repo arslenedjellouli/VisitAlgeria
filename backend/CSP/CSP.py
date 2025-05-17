@@ -615,7 +615,12 @@ class TravelPlanner:
         itinerary = []
         prev_hotel = None
         day_num = 1
-
+        visitedAttractionsIds ={}
+        for att in user_prefs.visitedAttractions:
+            for loc in self.locations:
+                if loc.name == att:
+                    visitedAttractionsIds[loc.id] = True 
+        
         current_prefs = UserPreferences(
             user_prefs.currentLat,
             user_prefs.currentLong,
@@ -623,7 +628,7 @@ class TravelPlanner:
             user_prefs.budgetPerDay,
             user_prefs.minHotelRate,
             user_prefs.maxHotelRate,
-            user_prefs.visitedAttractions.copy(),
+            visitedAttractionsIds,
             user_prefs.currentWilaya
         )
 
