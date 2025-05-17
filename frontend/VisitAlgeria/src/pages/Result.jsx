@@ -1,19 +1,37 @@
-import React from 'react'
-import Itinerary from '../components/Itinerary.jsx';
-import itineraryData from './response_1747413732462.json'; // Import your JSON data
+import React, { useEffect, useState } from "react";
+import Itinerary from "../components/Itinerary.jsx";
+import { useNavigate } from "react-router-dom";
 
-const result = () => {
+const Result = () => {
+  const navigate = useNavigate();
+  const [itinerary, setItinerary] = useState(null);
+
+  useEffect(() => {
+    const storedItinerary = JSON.parse(localStorage.getItem("itinerary"));
+    if (storedItinerary) {
+      setItinerary(storedItinerary);
+    } else {
+      navigate("/plan/preferences");
+    }
+  }, []);
+
+  if (!itinerary) return null; // or a loading spinner
+
   return (
-    <>
-      <article className="csp-result-wrapper">
-        <Itinerary data={itineraryData} />
-      </article>
-
-
-    </>
+    <article className="csp-result-wrapper">
+      <Itinerary data={itinerary} />
+      <div className="go-summary-button">
+        <a
+          className="go-summary"
+          onClick={() => {
+            navigate("/plan/summary");
+          }}
+        >
+          &#x276F;
+        </a>
+      </div>
+    </article>
   );
+};
 
-
-}
-
-export default result
+export default Result;
