@@ -344,7 +344,7 @@ h2 {
   margin-top: 1rem;
   width: 94%;
   height: 204px;
-  
+
   /* Maintain position relative for the pseudo-element */
   position: relative;
 }
@@ -358,10 +358,13 @@ h2 {
   bottom: 0;
   border-radius: 20px; /* You can adjust this if needed */
   border: 1px solid transparent;
-  background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(255,255,255,0)) border-box;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) padding-box, 
-    linear-gradient(#fff 0 0);
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0)
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   pointer-events: none;
@@ -729,6 +732,258 @@ h2 {
 .remove-tag {
   margin-left: 5px;
   font-weight: bold;
+  font-size: 14px;
+}
+
+.csp-result-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+}
+
+.csp-result-container {
+  position: relative;
+  width: 1244px;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(26, 26, 26, 0.651);
+  border-radius: 20px;
+  backdrop-filter: blur(60px);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.17);
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2rem;
+  scrollbar-width: none;
+}
+
+.csp-result-container::-webkit-scrollbar {
+  display: none;
+}
+
+.csp-result-container-wrap {
+  position: relative;
+  width: 1244px;
+  height: 760px;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.csp-result-container-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0)
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* TEEEEEEESSSST */
+
+.result-day-box {
+  display: flex;
+  background-color: #1a1a1aa6;
+  border-radius: 20px;
+  width: 1192px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.result-day-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0)
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.day-header {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: white;
+  line-height: 100%;
+  text-align: center;
+  min-width: 112px;
+  margin: auto 20px;
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  scrollbar-width: none;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 165px;
+  min-width: 165px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-header {
+  display: flex;
+}
+
+.card-expanded {
+  height: auto;
+}
+
+.card-image {
+  position: relative;
+  z-index: 10;
+  width: 58px;
+  height: 58px;
+  border-radius: 8px;
+  border: none;
+  object-fit: cover;
+}
+
+.card-content {
+}
+
+.card-basic-info {
+  margin-left: 10px;
+}
+
+.card-name {
+  font-family: "Manrope", serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0.32px;
+  white-space: nowrap;
+  display: inline-block;
+  transition: transform 0.5s linear; /* fast return by default */
+}
+
+.card:hover .card-name {
+  transform: translateX(
+    calc(100% - 200px)
+  ); /* adjust 200px to your card width */
+  transition: transform 5s linear; /* slow scroll on hover */
+}
+
+.card-time {
+  font-family: "Manrope", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 0.32px;
+}
+
+.card-category {
+  color: #73ced0;
+  font-family: "Inter";
+  line-height: 100%;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.card-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-details.expanded {
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+.card-description {
+  margin: 10px 0;
+  line-height: 100%;
+  color: #ffffffde;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 300;
+}
+
+.card-contact {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.card-contact-item {
+  color: #73ced0;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline solid #73ced0;
+  text-underline-offset: 4px; /* Adjust this value as needed */
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.card-contact-icon {
+  margin-right: 5px;
+  color: #555;
+}
+
+.no-image {
+  width: 58px;
+  min-width: 58px;
+  height: 58px;
+  min-height: 58px;
+  border-radius: 8px;
+  border: none;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
   font-size: 14px;
 }
 
