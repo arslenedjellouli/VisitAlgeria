@@ -6,6 +6,7 @@ import {
   CircleMarker,
   Marker,
   Popup,
+  useMap,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -20,6 +21,8 @@ import {
 import Icon1 from "../assets/Frame (2).svg";
 import Icon2 from "../assets/Frame (3).svg";
 import FallBackImage from "../assets/2270882ef6bf42f10c4f9aeacbda33c2b0d55814.png";
+import { useState, useEffect } from "react";
+
 // Colors for each day
 const DAY_COLORS = [
   "#FF5733", // Day 1 - Orange
@@ -30,13 +33,6 @@ const DAY_COLORS = [
   "#33FFF5", // Day 6 - Teal
   "#F5FF33", // Day 7 - Yellow
 ];
-
-// Starting location (example coordinates - replace with your actual starting point)
-const STARTING_LOCATION = {
-  latitude: 36.7538,
-  longitude: 3.0588,
-  name: "Starting Point",
-};
 
 // Fix for default marker icons
 delete L.Icon.Default.prototype._getIconUrl;
@@ -78,6 +74,26 @@ const DistanceTooltip = ({ active, payload, label }) => {
 };
 
 const ItineraryMap = ({ itineraryData }) => {
+  const [startingLocation, setStartingLocation] = useState({
+    latitude: 36.7538,
+    longitude: 3.0588,
+    name: "Starting Point",
+  });
+
+  useEffect(() => {
+    const saved = localStorage.getItem("startingLocation");
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.latitude && parsed.longitude) {
+          setStartingLocation(parsed);
+        }
+      } catch (e) {
+        console.error("Invalid startingLocation in localStorage");
+      }
+    }
+  }, []);
+
   if (!itineraryData) {
     return <div>Loading itinerary data...</div>;
   }
@@ -95,7 +111,7 @@ const ItineraryMap = ({ itineraryData }) => {
 
   // Add starting location
   hotelLocations.push({
-    ...STARTING_LOCATION,
+    ...startingLocation,
     type: "starting",
     day: 0,
   });
@@ -150,7 +166,7 @@ const ItineraryMap = ({ itineraryData }) => {
 
   // Create complete path including starting point and hotel transitions
   const completePath = [
-    [STARTING_LOCATION.latitude, STARTING_LOCATION.longitude],
+    [startingLocation.latitude, startingLocation.longitude],
     ...allLocations.map((loc) => [loc.latitude, loc.longitude]),
   ];
 
@@ -180,16 +196,15 @@ const ItineraryMap = ({ itineraryData }) => {
     }
   }
 
-  // Calculate center of the map
-  const allPoints = [
-    [STARTING_LOCATION.latitude, STARTING_LOCATION.longitude],
-    ...allLocations.map((loc) => [loc.latitude, loc.longitude]),
-  ];
-  const latitudes = allPoints.map((p) => p[0]);
-  const longitudes = allPoints.map((p) => p[1]);
-  const centerLat = (Math.min(...latitudes) + Math.max(...latitudes)) / 2;
-  const centerLng = (Math.min(...longitudes) + Math.max(...longitudes)) / 2;
+  const MapFocus = ({ lat, lng, zoom }) => {
+  const map = useMap();
+  useEffect(() => {
+    map.setView([lat, lng], zoom);
+  }, [lat, lng, zoom, map]);
+  return null;
+};
 
+  
   return (
     <div className="finalresult-wrapper">
       <div className="finalresult-container">
@@ -220,12 +235,17 @@ const ItineraryMap = ({ itineraryData }) => {
         <div className="finalresult-right">
           <div className="finalresult-map">
             <MapContainer
-              center={[STARTING_LOCATION.latitude, STARTING_LOCATION.longitude]}
+              center={[startingLocation.latitude, startingLocation.longitude]}
               zoom={10}
               scrollWheelZoom={true}
               zoomControl={false}
               style={{ height: "100%", width: "100%" }}
             >
+              <MapFocus
+                lat={startingLocation.latitude}
+                lng={startingLocation.longitude}
+                zoom={13}
+              />
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -263,8 +283,8 @@ const ItineraryMap = ({ itineraryData }) => {
               {/* Starting location marker */}
               <Marker
                 position={[
-                  STARTING_LOCATION.latitude,
-                  STARTING_LOCATION.longitude,
+                  startingLocation.latitude,
+                  startingLocation.longitude,
                 ]}
                 icon={L.icon({
                   iconUrl:
@@ -277,7 +297,7 @@ const ItineraryMap = ({ itineraryData }) => {
               >
                 <Popup className="custom-popup">
                   <div>
-                    <h3>{STARTING_LOCATION.name}</h3>
+                    <h3>{startingLocation.name}</h3>
                     <p>
                       <strong>Starting Point</strong>
                     </p>

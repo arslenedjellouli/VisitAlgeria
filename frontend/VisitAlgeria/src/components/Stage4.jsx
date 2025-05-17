@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import SearchIcon from "../assets/icnSearch-white.svg";
 
-const Stage4 = () => {
+const Stage4 = ({ onLocationsChange }) => {
   const allLocations = [
     "Grotte Merveilleuse",
     "Corniche Jijelienne",
@@ -1269,6 +1269,10 @@ const Stage4 = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  useEffect(() => {
+    onLocationsChange?.(selectedLocations);
+  }, [selectedLocations]);
 
   // Filter suggestions
   useEffect(() => {

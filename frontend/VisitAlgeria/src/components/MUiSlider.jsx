@@ -95,7 +95,7 @@ AirbnbThumbComponent.propTypes = {
   children: PropTypes.node,
 };
 
-export default function CustomizedSlider() {
+export default function CustomizedSlider({ onChange }) {
   return (
     <AirbnbSlider
       valueLabelDisplay="on"
@@ -104,6 +104,7 @@ export default function CustomizedSlider() {
         index === 0 ? "Minimum price" : "Maximum price"
       }
       defaultValue={[3, 4]}
+      onChange={(e, newValue) => onChange(newValue)}
       min={1}
       max={5}
     />

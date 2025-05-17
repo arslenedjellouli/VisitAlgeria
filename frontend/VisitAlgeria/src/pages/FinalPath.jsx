@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ItineraryMap from "../components/ItineraryMap.jsx";
-import itineraryData from "./response_1747413732462.json"; // Import your JSON file
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const [itineraryData, setItineraryData] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const stored = localStorage.getItem("itinerary");
+    if (stored) {
+      try {
+        setItineraryData(JSON.parse(stored));
+      } catch (e) {
+        console.error("Failed to parse itinerary from localStorage:", e);
+      }
+    }
+  }, []);
+
+  if (!itineraryData) return <p>Loading itinerary...</p>;
+
   return (
-    <div className="App">
+    <div className="csp-summary-wrapper">
       <ItineraryMap itineraryData={itineraryData} />
+      <div className="go-details-button">
+        <a
+          className="go-summary"
+          onClick={() => {
+            navigate("/plan/itinerary");
+          }}
+        >
+          &#x276E;
+        </a>
+      </div>
     </div>
   );
 }
