@@ -6,6 +6,7 @@ import Loading from "./pages/Loading";
 import FinalPath from "./pages/FinalPath";
 
 import BackgroundSlideshow from "./components/BackgroundSlideshow";
+import WaitPage from "./pages/Waiting";
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/plan/preferences" element={<UserChoice />} />
         <Route path="/plan/itinerary" element={<Result />} />
-        <Route path="/plan/generating" element={<Loading />} />
         <Route path="/plan/summary" element={<FinalPath />} />
+        <Route path="/plan/generating" element={<WaitPage />} />
 
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>

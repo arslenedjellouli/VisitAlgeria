@@ -1420,3 +1420,157 @@ img {
   -webkit-user-drag: none; /* Disable dragging in WebKit browsers */
   user-drag: none; /* Disable dragging in other browsers */
 }
+
+/* arslene test */
+
+/* Wait page container */
+.wait-page {
+  position: relative;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 1s;
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content overlay */
+.content-overlay {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+/* Header content */
+.header-content {
+  max-width: 600px;
+}
+
+.header-content h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-content p {
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation arrows */
+.navigation-arrows {
+  position: absolute;
+  right: 32px;
+  top: 66%;
+  transform: translateY(-96px);
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.nav-button {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-button svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Thumbnail container */
+.thumbnail-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  width: 100%;
+}
+
+.thumbnail {
+  position: relative;
+  height: 160px;
+  width: 256px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-overlay {
+    padding: 24px;
+  }
+
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
+  .thumbnail {
+    height: 120px;
+    width: 192px;
+  }
+
+  .navigation-arrows {
+    right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .thumbnail {
+    height: 80px;
+    width: 128px;
+  }
+}
