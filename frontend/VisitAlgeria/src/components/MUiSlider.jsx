@@ -26,6 +26,7 @@ const AirbnbSlider = styled(Slider)(({ theme }) => ({
   width: 600,
   "& .MuiSlider-track": {
     border: "none",
+    height: 20,
   },
   "& .MuiSlider-thumb": {
     height: 48,
@@ -44,9 +45,6 @@ const AirbnbSlider = styled(Slider)(({ theme }) => ({
     },
   },
 
-  "& .MuiSlider-track": {
-    height: 20,
-  },
   "& .MuiSlider-rail": {
     color: "#C0DBFB",
     opacity: 1,

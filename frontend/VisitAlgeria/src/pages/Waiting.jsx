@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image1 from "../assets/mountain-landscape.jpg"
 import Image2 from "../assets/coastal-town.jpg"
 import Image3 from "../assets/limestone-bay.jpg"
@@ -17,17 +17,6 @@ export default function WaitPage() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const goToPrevious = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1

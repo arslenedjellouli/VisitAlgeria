@@ -46,7 +46,7 @@ L.Icon.Default.mergeOptions({
 });
 
 // Custom Tooltip component
-const CustomTooltip = ({ active, payload, label }) => {
+const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
       <div className="custom-tooltip">
@@ -60,7 +60,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 // Custom Tooltip for Distance Chart
-const DistanceTooltip = ({ active, payload, label }) => {
+const DistanceTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
       <div className="custom-tooltip distance-tooltip">
@@ -88,7 +88,7 @@ const ItineraryMap = ({ itineraryData }) => {
         if (parsed.latitude && parsed.longitude) {
           setStartingLocation(parsed);
         }
-      } catch (e) {
+      } catch {
         console.error("Invalid startingLocation in localStorage");
       }
     }

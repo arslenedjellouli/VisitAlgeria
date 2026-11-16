@@ -37,7 +37,6 @@ const DayBox = ({ dayData, isExpanded, onDayToggle }) => {
           <LocationCard
             key={`day-${dayData.day}-item-${index}`}
             item={item}
-            dayNumber={dayData.day}
             isExpanded={isExpanded}
             onToggle={() => onDayToggle(dayData.day)}
           />
@@ -47,7 +46,7 @@ const DayBox = ({ dayData, isExpanded, onDayToggle }) => {
   );
 };
 
-const LocationCard = ({ item, dayNumber, isExpanded, onToggle }) => {
+const LocationCard = ({ item, isExpanded, onToggle }) => {
   return (
     <div
       className={`card ${isExpanded ? "card-expanded" : "card-collapsed"}`}

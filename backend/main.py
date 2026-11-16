@@ -1,4 +1,5 @@
 import uvicorn
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -10,6 +11,7 @@ from CSP.CSP import TravelPlanner  # Your itinerary function
 from CSP.CSP import UserPreferences  # Your original class
 
 app = FastAPI()
+BASE_DIR = Path(__file__).resolve().parent
 
 # Allow CORS
 app.add_middleware(
@@ -35,7 +37,10 @@ class UserPreferencesModel(BaseModel):
 def search_tour(preferences: UserPreferencesModel):
     # Convert Pydantic model (preferences) to actual UserPreferences object
 
-    planner = TravelPlanner('.\CSP\locations.csv', '.\CSP\wilaya_data.json')
+    planner = TravelPlanner(
+        str(BASE_DIR / "CSP" / "locations.csv"),
+        str(BASE_DIR / "CSP" / "wilaya_data.json"),
+    )
 
     # Convert the incoming preferences data to UserPreferences object
     user_pref = UserPreferences(

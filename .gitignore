@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Generated backend output
+backend/itineraries/
+
+# Node.js and frontend builds
+frontend/VisitAlgeria/node_modules/
+frontend/VisitAlgeria/dist/
+frontend/VisitAlgeria/.vite/
+frontend/VisitAlgeria/.env
+frontend/VisitAlgeria/.env.*
+!frontend/VisitAlgeria/.env.example
+
+# Local tooling and operating-system files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.log

@@ -7,6 +7,8 @@ import Stage2 from "../components/Stage2";
 import Stage3 from "../components/Stage3";
 import Stage4 from "../components/Stage4";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 export default function PreferenceFlow() {
   const sendPlanRequest = async () => {
     if (!selectedLocation || !selectedInterests || !selectedVisited) {
@@ -30,7 +32,7 @@ export default function PreferenceFlow() {
     navigate("/plan/generating");
 
     try {
-      const response = await fetch("http://localhost:8000/search", {
+      const response = await fetch(`${API_URL}/search`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
